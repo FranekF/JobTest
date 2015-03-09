@@ -1,1 +1,1 @@
-# PretiusTest
+# Zadanie testowe rekrutacja
