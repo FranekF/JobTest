@@ -24,7 +24,7 @@ public class Calculator
 	{
 		try 
 		{
-			fileReader = new FileReader("dane.txt");
+			fileReader = new FileReader(filePath);
 			bufferedReader = new BufferedReader(fileReader);
 		}
 		catch (IOException e)
