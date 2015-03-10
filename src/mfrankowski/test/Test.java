@@ -1,10 +1,18 @@
 package mfrankowski.test;
 
-public class Test {
+import java.io.FileNotFoundException;
 
-	public static void main(String[] args) 
+public class Test 
+{
+	private static String filePath;
+	private static Calculator calculator;
+	
+	public static void main(String[] args) throws FileNotFoundException
 	{
-		System.out.println("first commit");
+		filePath = args[0];
+		calculator = new Calculator();
+		calculator.openFile("filePath");
+		System.out.printf("Sum is: %f\n", calculator.sum());
 	}
 
 }
